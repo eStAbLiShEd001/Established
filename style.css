@@ -799,24 +799,7 @@ footer {
     .container-button {
         justify-content: flex-start;
     }
-    .mainclass {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
-    }
-    .class1 {
-        margin-left: 2%;
-        margin-right: 2%;
-    }
-    .img2 {
-        width: 150%;
-    }
-    .mainul {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 15px;
-    }
     .layout {
         display: grid;
         grid-template-columns: auto auto;
