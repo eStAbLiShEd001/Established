@@ -241,7 +241,7 @@ padding-bottom: 20%;
     color: rgb(3, 3, 51);
     background-color: rgba(62, 75, 255, 0.199);
     padding: 5% 5%;
-    border-radius: 30px;
+    border-radius: 50%;
 }
 
 .layoutItems {
@@ -760,11 +760,16 @@ footer {
         width: 100%;
         align-items: center;
     }
+
     .container h2 a {
         text-decoration: none;
         margin: 0 32px;
         color: rgb(0, 0, 61);
     }
+    .img2 {
+        height: 90vh;
+    }
+
 
     .ul-nav {
         display: flex;
@@ -785,7 +790,7 @@ footer {
     .container2 {
         display: flex;
         flex-direction: row;
-        padding: 3% 5% 0 5%;
+        padding: 7% 5% 0 5%;
     }
     .heading {
         text-align: left;
@@ -799,6 +804,15 @@ footer {
     .container-button {
         justify-content: flex-start;
     }
+    .mybtn1 {
+        padding: 3% 6%;
+    }
+    .btn2 {
+        padding: 0 14%;
+    }
+    .test {
+        padding: 2% 7%;
+    }
 
     .layout {
         display: grid;
@@ -809,9 +823,15 @@ footer {
         display: grid;
         grid-template-columns: auto auto;
     }
+    .myBtn2 {
+        padding: 2% 7%;
+    }
     .container-skills {
         display: grid;
         grid-template-columns: auto auto;
+    }
+    input[type=submit] {
+        padding: 2% 5%;
     }
   }
 
