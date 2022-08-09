@@ -478,7 +478,7 @@ box-shadow: 0 1.5px 8px 2px rgba(0, 0, 0, 0.2);
 
     .timeline-main ul li:nth-child(even)::after {
         transform: translate(-50%, -50%);
-        right: 550px;
+        right: -100px;
     }
 
     .timeline-main ul li:hover {
@@ -746,3 +746,258 @@ footer {
     from{ bottom:-100px; opacity:0 } 
     to{ bottom:0; opacity:1 }
   }   
+
+
+  /* MEDIA QUERIES */
+  @media (min-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+        height: 4pc;
+        position: fixed;
+        width: 100%;
+        align-items: center;
+    }
+    .container h2 a {
+        text-decoration: none;
+        margin: 0 32px;
+        color: rgb(0, 0, 61);
+    }
+
+    .ul-nav {
+        display: flex;
+        list-style-type: none;
+        margin-right: 55px;
+    }
+    .ul-nav li a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: rgb(0, 0, 56);
+    }
+    .ul-nav li a:hover {
+        color: aqua;
+    }
+    
+    .container2 {
+        display: flex;
+        flex-direction: row;
+        padding: 3% 5% 0 5%;
+    }
+    .heading {
+        text-align: left;
+        padding-top: 15%;
+    }
+    .container2 p {
+        text-align: left;
+        padding: 2% 0 5% 0;
+    }
+
+    .container-button {
+        justify-content: flex-start;
+    }
+    .mainclass {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .class1 {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .img2 {
+        width: 150%;
+    }
+    .mainul {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+    }
+    .layout {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .container-skills {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+        height: 4pc;
+        position: fixed;
+        width: 100%;
+        align-items: center;
+    }
+    .container h2 a {
+        text-decoration: none;
+        margin: 0 60%;
+        color: rgb(0, 0, 61);
+    }
+
+    .ul-nav {
+        display: flex;
+        list-style-type: none;
+        margin-right: 55px;
+    }
+    .ul-nav li a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: rgb(0, 0, 56);
+    }
+    .ul-nav li a:hover {
+        color: aqua;
+    }
+
+    .container2 {
+        padding: 7% 7%;
+    }
+    .child2IMG {
+        justify-content: flex-end;
+    }
+    .img1 {
+        width: 80%;
+    }
+    .heading {
+        padding-top: 20%;
+        font-size: 5rem;
+    }
+    .container2 p {
+        font-size: 1.5rem;
+    }
+    .mybtn1 {
+        padding: 2% 5%;
+        font-size: 1.2rem;
+    }
+    .btn2 {
+        padding: 0 10%;
+    }
+    .mainclass {
+        padding: 5% 0;
+    }
+
+    .test {
+        padding: 2% 7%;
+        font-size: 1.2rem;
+    }
+    .myGrid {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin-top: 0;
+        margin-left: 7%;
+        margin-right: 7%;
+
+    }
+    .heading1 {
+        padding: 2% 7%;
+    }
+    .layout {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 0 7%;
+
+    }
+    .layoutItems {
+        margin: 0;
+    }
+    .heading3 {
+        padding: 5% 7% 0 7%;
+    }
+    .p1 {
+        padding: 1% 7%;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 5% 7%;
+    }
+    .myBtn2 {
+        padding: 1.5% 7%;
+    }
+    .heading4 {
+        padding: 10% 7% 2% 7%;
+    }
+    .timeline-content {
+        padding: 2% 2%;
+    }
+    .headingfive {
+        padding: 8% 7% 3% 7%;
+    }
+    .container-skills {
+        margin: 3% 7%;
+    }
+    .skills-child {
+        padding: 5% 5%;
+    }
+    .myPortfolio {
+        margin-top: 8%;
+    }
+    .heading7 {
+        padding: 8% 7% 0 7%;
+    }
+    .p7 {
+        padding: 2% 7%;
+    }
+    .GIT {
+        padding: 8% 7% 0 7%;
+    }
+    .p8 {
+        padding: 2% 7%;
+    }
+    .contact-main {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0 7%;
+    }
+    .contact-child2 {
+        padding: 0;
+    }
+    .MSG {
+        padding: 0;
+        margin: 0 5%;
+    }
+    .child02 {
+        justify-self: right;
+    }
+    input[type=submit] {
+        margin-bottom: 5%;
+        padding: 2% 7%;
+        font-size: 1rem;
+    }
+    footer {
+        margin-top: 5%;
+    }
+    .footer-h3 {
+        padding: 5% 7% 2% 7%;
+        font-size: 1.5rem;
+    }
+    .social {
+        font-size: 1.5rem;
+        border-radius: 50%;
+        margin: 0 1% 2% 1%;
+    }
+    .social:hover {
+        background-color: aqua;
+        color: white;
+    }
+    .copyright {
+        padding: 3% 7%;
+    }
+
+  }
