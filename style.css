@@ -767,7 +767,7 @@ footer {
         color: rgb(0, 0, 61);
     }
     .img2 {
-        height: 90vh;
+        height: 70vh;
     }
 
 
@@ -892,7 +892,12 @@ footer {
         padding: 0 10%;
     }
     .mainclass {
+        display: flex;
         padding: 5% 0;
+    }
+    .img2 {
+        height: 80vh;
+        padding: 0 0 0 7%;
     }
 
     .test {
