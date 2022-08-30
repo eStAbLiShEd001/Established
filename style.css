@@ -996,8 +996,8 @@ footer {
         font-size: 1.5rem;
     }
     .social {
-        font-size: 1.5rem;
-        border-radius: 50%;
+        font-size: 1.8rem;
+        border-radius: 25%;
         margin: 0 1% 2% 1%;
     }
     .social:hover {
