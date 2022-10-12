@@ -3,27 +3,38 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Rokkitt", serif;
+}
 
 .container {
   display: none;
 }
 .container2 {
-  background: url(images/19691.jpg);
+  background: url(images/19691.jpg\ \(1\).jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
   background-color: rgb(3, 3, 51);
-  width: 100%;
-  padding: 3% 5% 20% 5%;
+  padding: 0 5% 20% 5%;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section-image img {
+  width: 100%;
+  clip-path: circle();
 }
 .span01 {
-  animation-name: example;
+  animation-name: changeTextColor;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 
-@keyframes example {
+@keyframes changeTextColor {
   0% {
     color: aqua;
   }
@@ -60,6 +71,7 @@
 .mybtn1 {
   padding: 3% 5%;
   transition-duration: 0.4s;
+  margin: 5% 0;
   overflow: hidden;
   cursor: pointer;
   border-radius: 30px;
@@ -112,11 +124,7 @@
 .btn2 {
   padding: 0 10%;
 }
-.child2IMG {
-  display: flex;
-  justify-content: center;
-  padding: 10% 5%;
-}
+
 .heading {
   text-align: center;
   font-size: 3rem;
@@ -126,27 +134,16 @@
   animation-name: slidein;
 }
 
-.img1 {
 
-  width: 100%;
-
-}
-.mainclass {
-  background: url(images/19366.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 10%;
-  padding-bottom: 10%;
-
+.section-two {
+  display: flex;
+  flex-direction: column;
+  padding: 15% 5%;
 }
 
-.class1 {
-  padding: 0 5%;
-}
 .img2 {
-  /* height: 60vh; */
   width: 100%;
+  margin: 5% 0;
 }
 
 .ul01 .okk {
@@ -159,8 +156,8 @@
 }
 
 .head2 {
-  font-size: 1.5rem;
-  color: black;
+  font-size: 1.2rem;
+  color: aqua;
 }
 .test {
   background-color: rgba(0, 255, 255, 0.808);
@@ -194,7 +191,7 @@
   transition: 0s;
 }
 .okay1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .okay2 {
@@ -211,7 +208,6 @@
 }
 .gridd {
   text-align: center;
-  position: center;
   color: rgb(3, 3, 51);
   font-size: 2rem;
   padding-bottom: 5%;
@@ -231,7 +227,7 @@
   color: rgb(1, 0, 36);
 }
 .head4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .heading1 {
   text-align: center;
@@ -272,23 +268,28 @@
 .mySecGrid {
   width: 100%;
   margin-top: 10%;
-  background-color: rgb(243, 243, 243);
+  background: rgba(0, 0, 0, 0.658) url(images/6107081.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
 }
+
 .heading3 {
   padding-top: 20%;
   padding-left: 5%;
   padding-right: 5%;
   font-size: 2rem;
   text-align: center;
+  color: white;
 }
 .p1 {
   text-align: center;
   padding: 5% 5%;
   font-size: 1.1rem;
+  color: white;
 }
 .parent {
-  background-position: left;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -319,31 +320,26 @@
   border-radius: 30px;
 }
 .gridText {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 .grid2 p {
   padding-top: 5%;
 }
 .bgImg {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.582)),
-  url(images/charles-forerunner-3fPXt37X6UQ-unsplash\\(1\).jpg); */
-  background-position: center;
-  background-size: cover;
-  height: 30pc;
   justify-content: center;
   align-items: center;
   display: flex;
+  padding: 20% 5%;
 }
 
 .tbText {
   text-align: center;
-  color: white;
-  padding: 0 5%;
+  color: rgb(0, 0, 0);
 }
 
 .text1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .text2 {
@@ -391,12 +387,7 @@
   padding: 0 5%;
 }
 
-
 .myTimeline {
-  background: url(images/3326663-removebg-preview.png);
-    background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -410,6 +401,9 @@
   height: auto;
   margin: 0 auto;
   position: relative;
+}
+.timeline-content {
+  padding: 5%;
 }
 
 .timeline-main ul {
@@ -471,22 +465,10 @@
     transform: translateX(30px);
   }
 
-  /* .timeline-main ul li::after {
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    background-color: aqua;
-    border-radius: 50%;
-    top: 0;
-  } */
-
   .timeline-main ul li:nth-child(odd)::after {
     transform: translate(50%, -50%);
     right: -30px;
   }
-
-
 
   .timeline-main ul li:hover {
     background-color: aqua;
@@ -683,6 +665,10 @@ textarea {
 }
 footer {
   background-color: rgb(3, 3, 51);
+  background: url(images/19691.jpg\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
 }
 .footer-h3 {
   padding: 15% 5% 5% 5%;
@@ -811,14 +797,9 @@ footer {
     transition-property: color;
     transition-duration: 1.2s;
   }
-  .mainclass {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
 
   .img2 {
-    width: 100%;
-    /* height: 70vh; */
+    width: 400px;
   }
 
   .ul-nav {
@@ -838,20 +819,32 @@ footer {
     transition-property: color;
     transition-duration: 1.2s;
   }
+  .myGrid {
+    transform: translateY(-10%);
+  }
 
   .container2 {
-    display: flex;
-    flex-direction: row;
-    padding: 7% 5% 10% 5%;
-  /* padding: 3% 5% 15% 5%; */
+    padding: 20% 5%;
+    gap: 10%;
+    flex-direction: row-reverse;
+  }
+  .hero-section-image img {
+    min-width: 300px;
   }
   .heading {
     text-align: left;
-    padding-top: 15%;
   }
   .container2 p {
     text-align: left;
     padding: 2% 0 5% 0;
+  }
+  .section-two {
+    flex-direction: row;
+    gap: 5%;
+  }
+  .mainul {
+    display: flex;
+    padding: 0 ;
   }
   .heading1 {
     font-size: 5rem;
@@ -875,7 +868,7 @@ footer {
     justify-content: flex-start;
   }
   .mybtn1 {
-    padding: 3% 6%;
+    padding: 2% 10%;
   }
   .btn2 {
     padding: 0 14%;
@@ -903,20 +896,7 @@ footer {
   input[type="submit"] {
     padding: 2% 5%;
   }
-  p {
-    font-size: 1.5rem;
-  }
 }
-@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap");
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "GFS Didot", serif;
-}
-
-
 
 @media (min-width: 1000px) {
   .container {
@@ -954,14 +934,15 @@ h5 {
   .container2 {
     padding: 7% 7%;
   }
-  .child2IMG {
-    justify-content: flex-end;
+  .hero-section-image img {
+    width: 400px;
   }
   .img1 {
-    width: 80%;
+    width: 120%;
+    clip-path: circle();
   }
   .heading {
-    padding-top: 20%;
+    /* padding-top: 20%; */
     font-size: 5rem;
   }
   .container2 p {
@@ -974,18 +955,15 @@ h5 {
   .btn2 {
     padding: 0 10%;
   }
-  .mainclass {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 5% 0;
-  }
   .head2 {
     font-size: 2rem;
   }
+  .section-two {
+    justify-content: center;
+    align-items: center;
+  }
   .img2 {
-    /* height: 80vh; */
-    width: 100%;
-    padding: 0 0 0 7%;
+    width: 500px;
   }
 
   .test {
